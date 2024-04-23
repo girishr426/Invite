@@ -1,1 +1,1 @@
-# WeddingInvite
+# Invite
