@@ -3,71 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Wedding Invitation</title>
+    <title>Wedding Invitation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('background.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+			background-image: url('W.jpg'); /* Replace 'webpage-background.jpg' with the path to your image */
             background-size: cover;
             background-position: center;
-            color: #333;
+            background-color: #f5f5f5;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Adding opacity to the background */
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        p {
-            text-align: justify;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .invitation {
-            margin-bottom: 20px;
+            background-image: url('Q.jpg'); /* Replace 'background.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            padding: 20px;
+            color: black; /* Adjust text color for better visibility */
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #FF6F61;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        h1, p {
+            text-align: center;
         }
-        .btn:hover {
-            background-color: #ED4337;
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="email"], textarea, input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: black;
+            padding: 14px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Wedding Invitation</h1>
-    <div class="invitation">
-        <p>Dear Friends and Family,</p>
-        <p>We are thrilled to announce the union of our hearts in marriage!</p>
-        <p>You are cordially invited to celebrate with us on our special day.</p>
-        <h2>Date:</h2>
-        <p>Saturday, May 25, 2024</p>
-        <h2>Time:</h2>
-        <p>4:00 PM</p>
-        <h2>Location:</h2>
-        <p>XYZ Venue</p>
-        <p>123 Main Street</p>
-        <p>City, State, Zip Code</p>
-        <h2>R.S.V.P:</h2>
-        <p>Please RSVP by May 10th, 2024</p>
-        <p>Email: example@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </div>
-    <div class="btn-container">
-        <a href="#" class="btn">RSVP Now</a>
+    <div class="invitation" style="background-image: url('Q.jpg');">
+        <h1>Wedding Invitation</h1>
+        <p>You're cordially invited to the wedding of Chaitra and Girish</p>
+        <p>Date: 5-5-2024</p>
+        <p>Time: 10.30am</p>
+        <p>Venue: Kunchashri - Kunchitiga Samudaya Bhavana - Tumkur 572101</p>
+		
+		<p>Reception Date: 4-52024</p>
+        <p>Time: 6.30pm Onwards</p>
+        
+        <form action="https://formspree.io/girishr426@gmail.com" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="rsvp">Need Accomodation:</label>
+            <input type="checkbox" id="rsvp" name="rsvp" value="Yes">
+            <input type="submit" value="Submit RSVP">
+        </form>
     </div>
 </div>
 
