@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-	    background-image: url('Q.jpg'); /* Replace 'webpage-background.jpg' with the path to your image */
+			background-image: url('W.jpg'); /* Replace 'webpage-background.jpg' with the path to your image */
             background-size: cover;
             background-position: center;
             background-color: #f5f5f5;
@@ -60,25 +60,22 @@
 <body>
 
 <div class="container">
-    <div class="invitation" style="background-image: url('W.jpg');">
+    <div class="invitation" style="background-image: url('Q.jpg');">
         <h1>Wedding Invitation</h1>
         <p>You're cordially invited to the wedding of Chaitra and Girish</p>
         <p>Date: 5-5-2024</p>
         <p>Time: 10.30am</p>
         <p>Venue: Kunchashri - Kunchitiga Samudaya Bhavana - Tumkur 572101</p>
-		
-		<p>Reception Date: 4-52024</p>
+	<p>Reception Date: 4-52024</p>
         <p>Time: 6.30pm Onwards</p>
         
-        <form action="https://formspree.io/f/mayravwq"method="POST">
-  <label>
-    Your Name:
-    <textarea name="Name"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-	    
+        <form action="https://formspree.io/f/mayravwq" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="rsvp">Accomodation:</label>
+            <input type="checkbox" id="rsvp" name="rsvp" value="Yes">
+            <input type="submit" value="Submit RSVP">
+        </form>
     </div>
 </div>
 
@@ -86,6 +83,5 @@
     <div class="body" style="background-image: url('Q.jpg');">	
     </div>
 </div>
-
 </body>
 </html>
